@@ -10,3 +10,6 @@ h1, h2 {
     font-weight: bold;
     font-size: 1.1em;
 }
+p {
+    font-size: 3rem;
+}
