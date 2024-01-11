@@ -1,16 +1,18 @@
-
-.naranja {
-    color: orange;
+body {
+    font-family: Arial, sans-serif;
 }
-
-.tomate {
+h1 {
+    color: blue;
+}
+p:nth-child(2) {
+    color: darkblue;
+}
+p:nth-child(3) {
+    color: lightblue;
+}
+p:nth-child(4) {
+    color: coral;
+}
+p:nth-child(5) {
     color: red;
-}
-
-.verduras {
-    color: green;
-}
-
-.carne {
-    color: brown;
 }
