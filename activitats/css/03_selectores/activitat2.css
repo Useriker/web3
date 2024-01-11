@@ -1,0 +1,12 @@
+body {
+    background-color: #F5F5F5;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color: #4C4C4C;
+}
+.sub {
+    font-weight: bold;
+    font-size: 1.1em;
+}
