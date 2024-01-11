@@ -1,18 +1,16 @@
-body {
-    font-family: Arial, sans-serif;
-}
+
 h1 {
     color: blue;
 }
-p:nth-child(2) {
+.Naranja{
     color: darkblue;
 }
-p:nth-child(3) {
+.Tomate{
     color: lightblue;
 }
-p:nth-child(4) {
+.Verduras {
     color: coral;
 }
-p:nth-child(5) {
+.Carne{
     color: red;
 }
