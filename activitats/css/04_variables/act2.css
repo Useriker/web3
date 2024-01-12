@@ -1,0 +1,5 @@
+.rect {
+    width: calc(2 * var(--box-height));
+    height: var(--box-height);
+    background-color: red;
+  }
