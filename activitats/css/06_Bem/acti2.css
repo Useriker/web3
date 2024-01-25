@@ -1,0 +1,39 @@
+.dialgo {
+    margin-bottom: 20px;
+}
+
+.dialgo-author {
+    font-weight: bold;
+    color: #333;
+}
+
+.dialgo-text {
+    margin-top: 5px;
+    color: #666;
+}
+
+.dialgo-form {
+    margin-top: 20px;
+}
+
+.dialgo-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.dialgo-form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dialgo-form button:hover {
+    background-color: #45a049;
+}
