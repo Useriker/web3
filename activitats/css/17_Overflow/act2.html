@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body {
+font-family: 'Arial', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+    
+table {
+width: 100%;
+border-collapse: collapse;
+overflow-x: auto;
+margin: 20px;
+border: 1px solid #ddd;
+}
+    
+th, td {
+padding: 10px;
+border: 1px solid #ddd;
+}
+    
+tbody {
+display: block;
+max-height: 200px; 
+overflow-y: auto;
+}
+    
+thead, tbody tr {
+display: table;
+width: 100%;
+table-layout: fixed;
+}
+@media screen and (max-width: 600px) {
+table, thead, tbody, th, td, tr {
+display: block;
+}
+    
+thead {
+position: absolute;
+top: -9999px;
+left: -9999px;
+}
+tr {
+margin-bottom: 15px;
+}
+td {
+border: none;
+position: relative;
+padding-left: 50%;
+}
+    
+td:before {
+position: absolute;
+top: 6px;
+left: 6px;
+width: 45%;
+padding-right: 10px;
+white-space: nowrap;
+content: attr(data-label);
+font-weight: bold;
+}
+}
+</style>
+      
+</head>
+<body>
+      <table>
+        <caption>Mi tabla</caption>
+        <thead>
+            <tr>
+                <th>Título 1</th>
+                <th>Título 2</th>
+                <th>Título 3</th>
+                <th>Título 4</th>
+                <th>Título 5</th>
+                <th>Título 6</th>
+                <th>Título 7</th>
+                <th>Título 8</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Título 1">Contenido</td>
+                <td data-label="Título 2">Contenido</td>
+                <td data-label="Título 3">Contenido</td>
+                <td data-label="Título 4">Contenido</td>
+                <td data-label="Título 5">Contenido</td>
+                <td data-label="Título 6">Contenido</td>
+                <td data-label="Título 7">Contenido</td>
+                <td data-label="Título 8">Contenido</td>
+            </tr>
+        </tbody>
+      </table>
+</body>
+</html>
