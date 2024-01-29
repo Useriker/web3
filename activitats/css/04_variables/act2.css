@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.rect{
+    margin: 5%;
+    padding-left: 100%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    padding-right: 100%;
+    border: 2px solid;
+}
