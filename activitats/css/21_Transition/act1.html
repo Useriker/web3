@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+form {
+width: 300px;
+padding: 20px;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+transition: box-shadow 0.3s;
+}
+    
+form:hover {
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+    
+label {
+display: block;
+margin-bottom: 8px;
+font-weight: bold;
+}
+    
+input, button {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 4px;
+transition: border-color 0.3s, transform 0.3s;
+}
+    
+input:focus, input:hover, button:focus, button:hover {
+border-color: #4CAF50;
+transform: scale(1.05);
+}
+    
+button {
+background-color: blue;
+color: #fff;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+    
+button:hover {
+background-color: transparent;
+color: blanchedalmond;
+}
+</style>
+</head>
+<body>
+    
+      <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+    
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required>
+    
+        <button type="submit">Enviar</button>
+      </form>
+    
+</body>
+</html>
