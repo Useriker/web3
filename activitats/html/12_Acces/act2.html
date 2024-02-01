@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Registrese!</h1>
+
+    <form action="#" method="post">
+
+        <label for="nombre">Tu Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <br>
+
+        <label for="email"> Tu Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <br>
+
+        <label for="password">Su Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+
+        <br>
+
+        <fieldset>
+            <legend>Género:</legend>
+            <input type="radio" id="genero-m" name="genero" value="masculino">
+            <label for="genero-m">M</label>
+
+            <input type="radio" id="genero-f" name="genero" value="femenino">
+            <label for="genero-f">F</label>
+
+        </fieldset>
+
+        <br>
+
+        <label for="terminos">
+            <input type="checkbox" id="terminos" name="terminos" required>
+            Acepto los términos y condiciones
+        </label>
+
+        <br>
+
+        <button type="submit">Puedes Registrarse</button>
+
+    </form>
+
+</body>
+</html>
