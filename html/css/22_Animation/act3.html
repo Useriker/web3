@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cookie-base {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cookie-img {
+            width: 150px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.5s ease; 
+        }
+
+        .cookie-ver {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s linear 1s; 
+        }
+
+        .cookie-ver p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .aceptar {
+            padding: 8px 16px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .accept-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .cookie-base:hover .cookie-img {
+            transform: scale(0.20);
+        }
+
+        .cookie-base:hover .cookie-ver {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, -50%) translateY(-20px);
+            transition: opacity 0.60s ease, transform 0.60s ease, visibility 0s linear;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cookie-base">
+        <img src="img/Cook.jpg" alt="Cookie" class="cookie-img">
+        <div class="cookie-ver">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <button class="aceptar">Aceptar!</button>
+        </div>
+    </div>
+</body>
+</html>
