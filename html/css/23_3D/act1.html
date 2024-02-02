@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+background-color: blue;
+}
+.base {
+perspective: 1000px;
+}
+.img3d {
+width: 300px;
+height: 200px;
+position: relative;
+transform-style: preserve-3d;
+transition: transform 0.5s;
+}
+
+.img3d:hover {
+transform: rotateY(50deg) rotateX(-30deg);
+}
+
+img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border: 1px solid #ddd;
+border-radius: 8px;
+}
+
+</style>
+</head>
+<body>
+<div class="base">
+<div class="img3d">
+<img src="img/oveja.jpg">
+</div>
+</div>
+</body>
+</html>
