@@ -1,9 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Times New Roman',sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
 body{
  height: 100vh;
  background-color: black;
@@ -19,6 +15,7 @@ header {
     background-color: #333;
     padding: 20px 0;
     z-index: 1000;
+    font-family: 'Protest Riot', sans-serif;
 }
 .inicio {
     display: flex;
