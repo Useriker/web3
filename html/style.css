@@ -146,12 +146,16 @@ nav ul li:hover {
 }
 .page-content .presentacion-imagen{
     margin-top: 5%;
-    text-align: center;
 }
 .page-content .presentacion-imagen img {
     max-width: 100%;
     height: auto;
+    transition: filter 0.5s;
 }
+.page-content .presentacion-imagen img:hover {
+    filter: brightness(50%);
+}
+
 
 .page-content .project-section{
     margin-top: 6%;
